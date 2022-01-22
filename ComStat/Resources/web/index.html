@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="assets/back.jpg" as="image">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Computer Statistics</title>
+</head>
+<body>
+    <form method="post" action="index.php" name="logForm">
+		<fieldset>
+			<legend>Valid Commands</legend>
+			<div class="title">General commands:<br></div>
+				<pre><div class="command">  disk:</div>    get disk information<br></pre>
+				<pre><div class="command">  smbios:</div>    get system management BIOS information<br></pre>
+				<pre><div class="command">  gpu:</div>    get gpu information<br></pre>
+				<pre><div class="command">  cpu:</div>    get cpu information<br></pre>
+				<pre><div class="command">  network:</div>    get network information<br></pre>
+				<pre><div class="command">  system:</div>    get system information<br></pre>
+				<pre><div class="command">  physicalmemory:</div>    get physical memory information<br></pre>
+				<pre><div class="command">  registry:</div>    get hardware id information<br></pre>
+				
+			<div class="title">Custom commands:<br></div>
+				<pre><div class="command">  [general command] get [characteristic name, ...]:</div>    get characteristic information<br></pre>
+				
+			<div class="title">Other commands:<br></div>
+				<pre><div class="command">  all:</div>    get all information (execute all commands)<br></pre>
+				<pre><div class="command">  real time:</div>    get cpu and memory logs in real time<br>    (also it save log in logs/log.csv)<br></pre>
+				<pre><div class="command">  music on:</div>    music on<br></pre>
+				<pre><div class="command">  music off:</div>    music off<br></pre>
+				<pre><div class="command">  save:</div>    save all statistics in logs/statistics.csv<br></pre>
+				<pre><div class="command">  help:</div>    watch valid commands<br></pre>
+				<pre><div class="command">  exit:</div>    exit from application<br></pre>
+		</fieldset>
+	</form>
+    <img id="gif" src="assets/animation1.gif">
+</body>
+</html>
